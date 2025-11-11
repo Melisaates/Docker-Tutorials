@@ -12,6 +12,7 @@ ENV PORT=5555
 RUN echo "App name : $APP_NAME"
 RUN echo "PORT : $PORT"
 RUN echo "App version : $APP_VERSION"
+VOLUME /temp
 # Healthcheck to monitor the container's health
 # interval means how often to run the check
 # timeout means how long to wait for the check to complete
