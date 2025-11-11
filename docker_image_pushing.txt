@@ -1,0 +1,19 @@
+1-docker hub login
+docker login --username=melisates
+
+2-create repo on docker hub
+
+3-build docker image
+
+4-tag the image
+docker tag image_id melisates/my_nodejs:tagname
+
+5-push the image to docker hub
+docker push melisates/my_nodejs:tagname
+
+6-docker pull to test   
+docker pull melisates/my_nodejs:tagname
+
+7-run the image
+docker run -p 5555:8080 melisates/my_nodejs:tagname
+
